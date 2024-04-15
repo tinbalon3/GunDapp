@@ -4,7 +4,7 @@ import 'gun/axe';
 import { writable } from 'svelte/store';
 
 // Database
-export const db = GUN();
+const db = GUN('https://dawn-butterfly-7193.on.fleek.co');
 
 // Gun User
 export const user = db.user().recall({sessionStorage: true});
