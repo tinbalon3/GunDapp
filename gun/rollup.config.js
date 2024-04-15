@@ -29,12 +29,12 @@ function serve() {
 }
 
 export default {
-	input: './src/main.js',
+	input: '../gun/src/main.js',
 	output: {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: './public/build/bundle.js'
+		file: '../gun/public/build/bundle.js'
 	},
 	plugins: [
 		svelte({
@@ -45,7 +45,7 @@ export default {
 		}),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
-		css({ output: './public/build/bundle.css' }),
+		css({ output: '../gun/public/build/bundle.css' }),
 
 		resolve({
 			browser: true,
