@@ -45,7 +45,7 @@ export default {
 		}),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
-		css({ output: '../gun/public/build/bundle.css' }),
+		css({ output: 'bundle.css' }),
 
 		resolve({
 			browser: true,

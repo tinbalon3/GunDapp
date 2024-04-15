@@ -6,7 +6,12 @@
   import debounce from 'lodash.debounce';
 
   import GUN from 'gun';
-  const db = GUN();
+  const db = new GUN({
+  // Replace with your actual GunDB instance URL
+  url: 'https://icy-sea-0528.on.fleek.co/gun',
+  // Use the 'ws' transport for WebSocket connection
+  transport: 'ws'
+});
 
   let newMessage;
   let messages = [];
