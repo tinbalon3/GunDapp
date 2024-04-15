@@ -2,7 +2,7 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "private": true,
-  "homepage":".",
+  "homepage": ".",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -20,7 +20,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "gun": "^0.2020.1234",
+    "express": "^4.19.2",
+    "gun": "^0.2020.1240",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "sirv-cli": "^1.0.0"

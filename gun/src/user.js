@@ -4,12 +4,9 @@ import 'gun/axe';
 import { writable } from 'svelte/store';
 
 // Database
-const db = new GUN({
-    // Replace with your actual GunDB instance URL
-    url: 'https://icy-sea-0528.on.fleek.co/gun',
-    // Use the 'ws' transport for WebSocket connection
-    transport: 'ws'
-  });
+const db = Gun({
+  peers: ['http:localhost:8000/gun'] // Put the relay node that you want here
+})
 
 // Gun User
 export const user = db.user().recall({sessionStorage: true});
