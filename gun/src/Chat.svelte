@@ -6,7 +6,7 @@
   import debounce from 'lodash.debounce';
 
   import GUN from 'gun';
-  const db = GUN('https://dawn-butterfly-7193.on.fleek.co');
+  const db = GUN();
 
   let newMessage;
   let messages = [];
